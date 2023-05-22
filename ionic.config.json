@@ -1,0 +1,7 @@
+{
+  "name": "yase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

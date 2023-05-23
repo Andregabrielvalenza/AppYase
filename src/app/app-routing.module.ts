@@ -8,8 +8,24 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'onboarding1',
     pathMatch: 'full'
+  },
+  {
+    path: 'onboarding1',
+    loadChildren: () => import('./onboarding1/onboarding1.module').then( m => m.Onboarding1PageModule)
+  },
+  {
+    path: 'onboarding2',
+    loadChildren: () => import('./onboarding2/onboarding2.module').then( m => m.Onboarding2PageModule)
+  },
+  {
+    path: 'onboarding3',
+    loadChildren: () => import('./onboarding3/onboarding3.module').then( m => m.Onboarding3PageModule)
+  },
+  {
+    path: 'onboarding4',
+    loadChildren: () => import('./onboarding4/onboarding4.module').then( m => m.Onboarding4PageModule)
   },
 ];
 

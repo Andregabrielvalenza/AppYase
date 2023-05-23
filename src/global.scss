@@ -24,3 +24,120 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+@font-face{
+    font-family: Poppins-regular;
+    src : url('/assets/font/Poppins-Regular.ttf')
+}
+@font-face{
+    font-family: Poppins-bold;
+    src : url('/assets/font/Poppins-Bold.ttf')
+}
+@font-face{
+    font-family: Poppins-light;
+    src : url('/assets/font/Poppins-Light.ttf')
+}
+@font-face{
+    font-family: Poppins-medium;
+    src : url('/assets/font/Poppins-Medium.ttf')
+}
+@font-face{
+    font-family: Poppins-semiBold;
+    src : url('/assets/font/Poppins-SemiBold.ttf')
+}
+
+.font-poppins-regular{
+    font-family: Poppins-regular !important;
+}
+.font-poppins-bold{
+    font-family: Poppins-bold !important;
+}
+.font-poppins-light{
+    font-family: Poppins-light !important;
+}
+.font-poppins-medium{
+    font-family: Poppins-medium !important;
+}
+.font-poppins-semibold{
+    font-family: Poppins-semiBold !important;
+}
+
+body{
+    --ion-background-color: #fff !important;
+    background-color: #fff !important;
+}
+app-root{
+    --ion-background-color: #fff !important;
+    background-color: #fff !important;
+}
+ion-content::part(background) {
+    background: #fff;
+}
+.img-sin-fondo{
+    mix-blend-mode: multiply;
+}
+.card-onboar{
+    background: rgb(16,49,124);
+    background: linear-gradient(180deg, rgba(16,49,124,0.5) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 0px;
+    height: 60vh;
+    padding-left: 3.0625rem;
+    padding-right: 3.0625rem;
+    padding-top: 10rem;
+    box-shadow: none;
+    padding-bottom: 3.75rem;
+    ion-img{
+        width: 100%;
+    }
+}
+.padding-left-right-general{
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+}
+.card-puntos{
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    ion-icon{
+        color: #BFBFBF;
+        margin-right: 0.3125rem;
+    }
+    .icon-activo-onboar{
+        color: #23ADEB !important;
+    }
+}
+.titulos-44-size-18{
+    color: #444444;
+    font-size: 1.125rem;
+}
+.textos-44-size-16{
+    color: #444444;
+    font-size: 1rem;
+}
+.margin-top-46{
+    margin-top: 2.875rem;
+}
+.margin-top-14{
+    margin-top: 0.875rem;
+}
+.btn-general{
+    --background: #2757DF;
+    --background-activated: #2757DF;
+    --color: #fff;
+    --color-activated: #fff;
+    --border-radius: 1.5625rem;
+    font-size: 1rem;
+    --padding-start	: 6rem;
+    --padding-end: 6rem;
+    --padding-top: 1rem;
+    --padding-bottom: 1rem;
+}
+.btn-transparent-44{
+    --background: transparent !important;
+    --background-activated: transparent !important;
+    --color: #444444 !important;
+    --color-activated: #444444 !important;
+}
+.margin-top-28{
+    margin-top: 1.75rem;
+}

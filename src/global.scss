@@ -73,8 +73,16 @@ app-root{
 ion-content::part(background) {
     background: #fff;
 }
+.ion-content-scroll-host {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
 .img-sin-fondo{
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply !important;
 }
 .card-onboar{
     background: rgb(16,49,124);
@@ -85,9 +93,12 @@ ion-content::part(background) {
     padding-right: 3.0625rem;
     padding-top: 10rem;
     box-shadow: none;
-    padding-bottom: 3.75rem;
+    padding-bottom: 0rem;
+    height: auto;
     ion-img{
         width: 100%;
+        height: 16.8125rem;
+        object-fit: contain;
     }
 }
 .padding-left-right-general{
@@ -114,8 +125,8 @@ ion-content::part(background) {
     color: #444444;
     font-size: 1rem;
 }
-.margin-top-46{
-    margin-top: 2.875rem;
+.margin-top-39{
+    margin-top: 2.4375rem;
 }
 .margin-top-14{
     margin-top: 0.875rem;
@@ -129,15 +140,175 @@ ion-content::part(background) {
     font-size: 1rem;
     --padding-start	: 6rem;
     --padding-end: 6rem;
-    --padding-top: 1rem;
-    --padding-bottom: 1rem;
+    height: 3.3125rem;
+    background-color: #2757DF;
+    border-radius: 1.5625rem;
+}
+.btn-widht-100{
+    width: 100%;
+    --padding-start	: 0px !important;
+    --padding-end: 0px !important;
 }
 .btn-transparent-44{
     --background: transparent !important;
     --background-activated: transparent !important;
     --color: #444444 !important;
     --color-activated: #444444 !important;
+    background-color: transparent !important;
 }
 .margin-top-28{
     margin-top: 1.75rem;
+}
+.conten-padding-top-proceso{
+    padding-top: 8rem;
+}
+.titulo-44-size-24{
+    color: #444444;
+    font-size: 1.5rem;
+}
+.margin-top-62{
+    margin-top: 3.875rem;
+}
+.btn-redes-sociales{
+    --background: transparent;
+    --background-activated: transparent;
+    --color: #444444;
+    --color-activated: #444444;
+    --border-width: 1px;
+    --border-style: solid;
+    --border-radius: 12px;
+    --border-color: #CCCCCC;
+    width: 100%;
+    height: 3.3125rem;
+    font-size: 0.9375rem;
+    ion-img{
+        margin-right: 0.4375rem;
+        width: 1.4375rem;
+    }
+}
+.margin-top-31{
+    margin-top: 1.9375rem;
+}
+.ion-no-margin-bottom{
+    margin-bottom: 0px;
+}
+.texto-44-size-13{
+    color: #444444;
+    font-size: 0.8125rem;
+    a{
+        color: #444444;
+        text-decoration: none;
+    }
+}
+.margin-top-25{
+    margin-top: 1.5625rem;
+}
+.logo-yasse-proceso{
+    width: 60%;
+    margin: 0 auto;
+}
+.item-input-general{
+    --padding-start: 1.25rem;
+    --padding-end: 1.25rem;
+    --inner-padding-start: 0px;
+    --border-radius: 8px;
+    --border-style: solid;
+    --border-width: 1px;
+    --border-color: #CCCCCC;
+    --background: transparent;
+    ion-icon{
+        color: #171717;
+        font-size: 1.125rem;
+    }
+    ion-input{
+        height: 3.375rem;
+        --background: transparent !important;
+        --border-width: 0px;
+        --color: #444444;
+        --placeholder-color: #444444;
+        font-size: 0.8125rem;
+    }
+}
+.item-input-general::part(native){
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.margin-top-5{
+    margin-top: 0.3125rem;
+}
+.margin-top-9{
+    margin-top: 0.5625rem;
+}
+.div-item-tres{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5625rem;
+}
+.ion-no-margin-right{
+    margin-right: 0px !important;
+}
+.modal-transparente{
+    --background: #0000009c;
+    ion-content::part(background) {
+        background: transparent;
+    }
+    ion-content{
+        --background: transparent;
+        --padding-start: 0px;
+        --padding-end: 0px;
+        div{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1.875rem;
+            padding-right: 1.875rem;
+            .card-modal-centro{
+                padding-top: 3.75rem;
+                padding-left: 3.4375rem;
+                padding-right: 3.4375rem;
+                padding-bottom: 1.875rem;
+                background-color: #fff;
+                border-radius: 20px;
+                border: 1px solid #707070;
+                width: 100%;
+                .img-modal{
+                    width: 20%;
+                    margin: 0 auto;
+                }
+                .titulo-azul-size-20{
+                    color: #2757DF;
+                    font-size: 1.25rem;
+                }
+                .btn-transparent-azul{
+                    --background: transparent !important;
+                    --background-activated: transparent !important;
+                    --color: #2757DF !important;
+                    --color-activated: #2757DF !important;
+                    background-color: transparent !important;
+                }
+            }
+        }
+    }
+}
+.title-17-size-18-header{
+    --color: #171717;
+    font-size: 1.125rem;
+    padding-left: 3.9375rem;
+    padding-right: 3.9375rem;
+}
+.btn-flecha-header{
+    --background: transparent;
+    --background-activated: transparent;
+    --color: #000000;
+    --color-activated: #000000;
+    margin-left: 1.25rem;
+    ion-icon{
+        font-size: 1.5625rem;
+    }
+}
+.toolbar-general-flecha{
+    --padding-top: 1.25rem;
+    --padding-bottom: 1.25rem;
 }

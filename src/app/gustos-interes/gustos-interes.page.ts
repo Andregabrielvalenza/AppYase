@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gustos-interes.page.scss'],
 })
 export class GustosInteresPage implements OnInit {
-
+  isModalOpen = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
   }
 
 }

@@ -73,6 +73,9 @@ app-root{
 ion-content::part(background) {
     background: #fff;
 }
+ion-toolbar{
+    --ion-toolbar-background: transparent;
+}
 .ion-content-scroll-host {
     position: absolute;
     top: 0;
@@ -319,6 +322,10 @@ ion-content::part(background) {
                     --color: #2757DF !important;
                     --color-activated: #2757DF !important;
                     background-color: transparent !important;
+                    width: 100%;
+                }
+                .btn-transparent-azul::part(native){
+                    color: #2757DF;
                 }
             }
         }
@@ -339,6 +346,15 @@ ion-content::part(background) {
     ion-icon{
         font-size: 1.5625rem;
     }
+}
+.btn-flecha-header::part(native){
+    color: #000000;
+}
+.btn-general::part(native){
+    color: #fff;
+}
+.btn-transparent-44::part(native){
+    color: #444444;
 }
 .toolbar-general-flecha{
     --padding-top: 1.25rem;

@@ -1,0 +1,32 @@
+.card-gustos{
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: none;
+    padding: 0.9375rem 0.75rem;
+    .div-espacios-iconos{
+        width: 1.875rem;
+        height: 1.875rem;
+        background-color: #444444;
+        margin: 0 auto;
+    }
+}
+
+.card-gustos.active:hover{
+    background-color: #2757DF !important;
+    .texto-44-size-13{
+        color: #fff !important;
+    }
+}
+
+/*
+.card-gustos.active{
+    background-color: #2757DF !important;
+    .texto-44-size-13{
+        color: #fff !important;
+    }
+}
+*/
+.img-modal-gustos{
+    width: 60%;
+    margin: 0 auto;
+}

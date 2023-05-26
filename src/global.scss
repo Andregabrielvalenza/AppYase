@@ -213,9 +213,10 @@ ion-content::part(background) {
     --inner-padding-start: 0px;
     --border-radius: 8px;
     --border-style: solid;
-    --border-width: 1px;
+    --border-width: 0px;
     --border-color: #CCCCCC;
-    --background: transparent;
+    --background: #F4F4F4;
+    position: relative;
     ion-icon{
         color: #171717;
         font-size: 1.125rem;
@@ -227,6 +228,37 @@ ion-content::part(background) {
         --color: #444444;
         --placeholder-color: #444444;
         font-size: 0.8125rem;
+        --placeholder-font-weight: 600;
+    }
+    ion-select{
+        width: 100% !important;
+        height: 3.375rem;
+        font-size: 0.8125rem;
+        .select-wrapper{
+            width: 100%;
+        }
+    }
+    ion-select::part(placeholder),
+    ion-select::part(text) {
+        width: 16.25rem;
+        color: #444444;
+    }
+    ion-select::part(placeholder){
+        font-weight: 600;
+    }
+    ion-select::part(icon){
+        display: none;
+    }
+    .icon-select{
+        position: absolute;
+        right: 0;
+        top: 1.25rem;
+        color: #000000;
+    }
+}
+.item-input-padding-top{
+    ion-input{
+        --padding-top: 0.3125rem;
     }
 }
 .item-input-general::part(native){
@@ -311,4 +343,41 @@ ion-content::part(background) {
 .toolbar-general-flecha{
     --padding-top: 1.25rem;
     --padding-bottom: 1.25rem;
+}
+.btn-decoration-unline{
+    text-decoration: underline;
+}
+.card-avatar{
+    background-color: transparent;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: none;
+    width: 8.125rem;
+    height: auto;
+    ion-img{
+        width: 6.25rem;
+        height: 6.25rem;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    ion-button{
+        --background: #2757DF;
+        --background-activated: #2757DF;
+        position: absolute;
+        bottom: -4px;
+        z-index: 1;
+        --border-radius: 9px;
+        right: 1.25rem;
+        width: 2.1875rem;
+        height: 2.1875rem;
+        ion-img{
+            width: 1.4375rem;
+            height: auto;
+        }
+    }
+}
+.div-item-tres-grid-gustos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
 }

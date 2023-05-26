@@ -6,6 +6,35 @@
 </ion-header>
 <ion-content [scrollY]="false">
   <div class="ion-content-scroll-host padding-left-right-general">
-    
+    <ion-card class="card-avatar">
+      <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+      <ion-button class="ion-no-padding">
+        <ion-img src="assets/img/icon-edit.svg" alt="edit"></ion-img>
+      </ion-button>
+    </ion-card>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-39">
+      <ion-input placeholder="Nombre" mode="ios" type="text" class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Apellidos" mode="ios" type="text" class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Fecha de nacimiento" mode="ios"  class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-select aria-label="Fruit" interface="popover" placeholder="Genero" mode="ios" class="font-poppins-light">
+        <ion-select-option value="apples">Masculino</ion-select-option>
+        <ion-select-option value="oranges">Femenino</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
   </div>
 </ion-content>
+<ion-footer collapse="fade" mode="ios" translucent="false" class="padding-left-right-general">
+  <ion-toolbar class="ion-text-center">
+    <ion-button mode="ios" class="btn-general font-poppins-regular margin-top-39 btn-widht-100" href="/regitro-ubicacion">
+      Siguiente
+    </ion-button>
+    <ion-button mode="ios" class="btn-general btn-transparent-44 font-poppins-light btn-decoration-unline" href="/home">Omitir paso ></ion-button>
+  </ion-toolbar>
+</ion-footer>

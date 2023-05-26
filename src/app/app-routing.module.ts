@@ -47,6 +47,14 @@ const routes: Routes = [
     path: 'crear-perfil',
     loadChildren: () => import('./crear-perfil/crear-perfil.module').then( m => m.CrearPerfilPageModule)
   },
+  {
+    path: 'regitro-ubicacion',
+    loadChildren: () => import('./regitro-ubicacion/regitro-ubicacion.module').then( m => m.RegitroUbicacionPageModule)
+  },
+  {
+    path: 'gustos-interes',
+    loadChildren: () => import('./gustos-interes/gustos-interes.module').then( m => m.GustosInteresPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,34 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Atención al cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host padding-left-right-general">
+    <h3 class="font-poppins-regular textos-44-size-16">¿Tienes preguntas? ¿Algo anda mal?</h3>
+    <p class="font-poppins-light texto-44-size-13">
+      Hola <b>Juan</b>, cuéntanos por favor en que te podemos ayudar. Selecciona la opción mas adecuada
+    </p>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-17">
+      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="cancelación de compras" mode="ios" class="font-poppins-light">
+        <ion-select-option value="apples">Masculino</ion-select-option>
+        <ion-select-option value="oranges">Femenino</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
+    <p class="font-poppins-light texto-44-size-13">
+      Una compra se puede cancelar sin motivo alguno dentro de las primeras 2 horas de la compra
+    </p>
+    <h3 class="font-poppins-bold titulos-44-size-18 margin-top-39">Motivo</h3>
+    <div class="div-flex-cehcbox">
+      <ion-checkbox labelPlacement="end" mode="md" class="font-poppins-regular texto-44-size-14 margin-top-5">Rubro numero 1</ion-checkbox>
+      <ion-checkbox labelPlacement="end" mode="md" class="font-poppins-regular texto-44-size-14 margin-top-5">Rubro numero 1</ion-checkbox>
+      <ion-checkbox labelPlacement="end" mode="md" class="font-poppins-regular texto-44-size-14 margin-top-5">Rubro numero 1</ion-checkbox>
+      <ion-checkbox labelPlacement="end" mode="md" class="font-poppins-regular texto-44-size-14 margin-top-5">Rubro numero 1</ion-checkbox>
+    </div>
+    <ion-button mode="ios" class="btn-general font-poppins-regular margin-top-51 btn-widht-100" href="/home">
+      Enviar
+    </ion-button>
+  </div>
+</ion-content>

@@ -55,6 +55,26 @@ const routes: Routes = [
     path: 'gustos-interes',
     loadChildren: () => import('./gustos-interes/gustos-interes.module').then( m => m.GustosInteresPageModule)
   },
+  {
+    path: 'favoritos',
+    loadChildren: () => import('./favoritos/favoritos.module').then( m => m.FavoritosPageModule)
+  },
+  {
+    path: 'resultado-busqueda',
+    loadChildren: () => import('./resultado-busqueda/resultado-busqueda.module').then( m => m.ResultadoBusquedaPageModule)
+  },
+  {
+    path: 'antencion-cliente',
+    loadChildren: () => import('./antencion-cliente/antencion-cliente.module').then( m => m.AntencionClientePageModule)
+  },
+  {
+    path: 'cancelar-compras',
+    loadChildren: () => import('./cancelar-compras/cancelar-compras.module').then( m => m.CancelarComprasPageModule)
+  },
+  {
+    path: 'preguntas-frecuentes',
+    loadChildren: () => import('./preguntas-frecuentes/preguntas-frecuentes.module').then( m => m.PreguntasFrecuentesPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,90 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Resultados de busqueda</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host padding-left-right-general">
+    <ion-item line="none" mode="ios" class="item-input-general margin-top-5">
+      <ion-input placeholder="¿Qué estas buscando?" mode="ios" type="search" class="font-poppins-light"></ion-input>
+      <ion-icon name="search-sharp" slot="end"></ion-icon>
+    </ion-item>
+    <h3 class="font-poppins-regular titulos-44-size-18 ion-text-center margin-top-25 ion-no-margin-bottom">Computacion</h3>
+    <p class="font-poppins-medium texto-27-size-17 ion-text-center">(Cusco)</p>
+    <swiper-container class="mySwiper mySwiper-busqueda" space-between="10" slides-per-view="4">
+      <swiper-slide>
+        <ion-item lines="none">
+          <p class="active">Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+    </swiper-container>
+    <ion-card class="ion-no-margin card-mapa margin-top-17"></ion-card>
+    <div class="div-item-grid-2 margin-top-31">
+      <ion-card class="ion-no-margin card-tecnologias ion-no-padding" type="button">
+        <ion-button mode="ios" class="btn-favorito ion-no-padding">
+          <ion-icon name="heart-outline" style="display: none;"></ion-icon>
+          <ion-icon name="heart" class="favorito-active"></ion-icon>
+        </ion-button>
+        <ion-img src="assets/img/imagen-tecnologia.png" class="img-tecnologias"></ion-img>
+        <ion-card-content>
+          <h4 class="font-poppins-medium">Cancun 4 d /3n</h4>
+          <p class="font-poppins-light p-start-valor"><ion-img src="assets/img/icon-start-medias.svg" class="icon-start"></ion-img> 4.7</p>
+          <p class="font-poppins-semibold p-precio-tecno">S/.120.00</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-tecnologias ion-no-padding" type="button">
+        <ion-button mode="ios" class="btn-favorito ion-no-padding">
+          <ion-icon name="heart-outline" style="display: none;"></ion-icon>
+          <ion-icon name="heart" class="favorito-active"></ion-icon>
+        </ion-button>
+        <ion-img src="assets/img/imagen-tecnologia.png" class="img-tecnologias"></ion-img>
+        <ion-card-content>
+          <h4 class="font-poppins-medium">Cancun 4 d /3n</h4>
+          <p class="font-poppins-light p-start-valor"><ion-img src="assets/img/icon-start-medias.svg" class="icon-start"></ion-img> 4.7</p>
+          <p class="font-poppins-semibold p-precio-tecno">S/.120.00</p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host padding-left-right-general">
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Seleccione el rubro deseado" mode="ios" class="font-poppins-light">
+        <ion-select-option value="apples">Masculino</ion-select-option>
+        <ion-select-option value="oranges">Femenino</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
+    <div class="margin-top-39">
+      <ion-item lines="none" class="item-list-favoritos">
+        <ion-img src="assets/img/img-turismo.png" class="img-favoritos"></ion-img>
+        <ion-label class="label-favorito">
+          <h2 class="font-poppins-semibold">Este es un nombre de producto</h2>
+          <p class="font-poppins-semibold">Nombre de la tienda</p>
+        </ion-label>
+        <ion-button mode="ios" class="btn-favorito-rojo ion-no-padding">
+          <ion-icon name="heart" class="favorito-active"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item lines="none" class="item-list-favoritos">
+        <ion-img src="assets/img/img-turismo.png" class="img-favoritos"></ion-img>
+        <ion-label class="label-favorito">
+          <h2 class="font-poppins-semibold">Este es un nombre de producto</h2>
+          <p class="font-poppins-semibold">Nombre de la tienda</p>
+        </ion-label>
+        <ion-button mode="ios" class="btn-favorito-rojo ion-no-padding">
+          <ion-icon name="heart" class="favorito-active"></ion-icon>
+        </ion-button>
+      </ion-item>
+    </div>
+  </div>
+</ion-content>

@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  isModalOpenFiltro = false;
+  isModalOpenMenu = false
   constructor() {}
+
+  setOpenFiltro(isOpen: boolean) {
+    this.isModalOpenFiltro = isOpen;
+  }
+
+  setOpenMenu(isOpen: boolean) {
+    this.isModalOpenMenu = isOpen;
+  }
 
 }

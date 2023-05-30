@@ -1,0 +1,47 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Atención al cliente</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host padding-left-right-general">
+    <h3 class="font-poppins-regular textos-44-size-16">¿Tienes preguntas? ¿Algo anda mal?</h3>
+    <p class="font-poppins-light texto-44-size-13">
+      Hola [Juan], cuéntanos por favor en que te podemos ayudar.
+    </p>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-17">
+      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Seleccione el rubro deseado" mode="ios" class="font-poppins-light">
+        <ion-select-option value="apples">Masculino</ion-select-option>
+        <ion-select-option value="oranges">Femenino</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Nombre" mode="ios" type="text" class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Apellidos" mode="ios" type="text" class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-textarea placeholder="Type something here" class="font-poppins-light"></ion-textarea>
+    </ion-item>
+    <ion-button mode="ios" class="btn-general font-poppins-regular margin-top-51 btn-widht-100" href="/cancelar-compras">
+      Enviar
+    </ion-button>
+    <div class="div-flex-dos-border-top">
+      <ion-card class="ion-no-margin ion-text-center card-border-right">
+        <ion-icon name="at-outline"></ion-icon>
+        <p class="font-poppins-light ion-no-margin-bottom">
+          <a href="mailto:info@yase.pe">info@yase.pe</a>
+        </p>
+      </ion-card>
+      <ion-card class="ion-no-margin ion-text-center">
+        <ion-icon name="call-outline"></ion-icon>
+        <p class="font-poppins-light ion-no-margin-bottom">
+          <a href="tel:+51922539121">(01) 8474921</a>
+        </p>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

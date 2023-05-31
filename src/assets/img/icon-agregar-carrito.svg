@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.284" height="23.985" viewBox="0 0 20.284 23.985">
+  <g id="Grupo_1339" data-name="Grupo 1339" transform="translate(-232.79 -749.486)">
+    <path id="Icon_material-add-shopping-cart" data-name="Icon material-add-shopping-cart" d="M7.537,18.6a2.012,2.012,0,1,0,2.012,2.012A2.01,2.01,0,0,0,7.537,18.6Zm10.062,0a2.012,2.012,0,1,0,2.012,2.012A2.01,2.01,0,0,0,17.6,18.6Zm-9.891-3.27.03-.121.906-1.64h7.5A2,2,0,0,0,17.9,12.538l3.884-7.053-1.751-.966h-.01L18.917,6.531,15.6,11.29l-6.52.272-.131-.272L6.692,6.531,5.736,4.518,4.79,2.506H1.5V4.518H3.512l3.622,7.637L5.776,14.62a1.945,1.945,0,0,0-.252.966A2.018,2.018,0,0,0,7.537,17.6H19.611V15.586H7.96A.256.256,0,0,1,7.708,15.335Z" transform="translate(231.29 750.842)" fill="#fff"/>
+    <g id="Icon_feather-eye" data-name="Icon feather-eye" transform="translate(237.788 743.986)">
+      <path id="Trazado_1657" data-name="Trazado 1657" d="M1.5,9.362S3.181,6,6.123,6s4.623,3.362,4.623,3.362-1.681,3.362-4.623,3.362S1.5,9.362,1.5,9.362Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Trazado_1658" data-name="Trazado 1658" d="M16.022,14.761A1.261,1.261,0,1,1,14.761,13.5,1.261,1.261,0,0,1,16.022,14.761Z" transform="translate(-8.638 -5.399)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

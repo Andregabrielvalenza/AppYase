@@ -75,6 +75,30 @@ const routes: Routes = [
     path: 'preguntas-frecuentes',
     loadChildren: () => import('./preguntas-frecuentes/preguntas-frecuentes.module').then( m => m.PreguntasFrecuentesPageModule)
   },
+  {
+    path: 'fraude',
+    loadChildren: () => import('./fraude/fraude.module').then( m => m.FraudePageModule)
+  },
+  {
+    path: 'cateogria-rubros',
+    loadChildren: () => import('./cateogria-rubros/cateogria-rubros.module').then( m => m.CateogriaRubrosPageModule)
+  },
+  {
+    path: 'galeria-producto',
+    loadChildren: () => import('./galeria-producto/galeria-producto.module').then( m => m.GaleriaProductoPageModule)
+  },
+  {
+    path: 'detalle-producto',
+    loadChildren: () => import('./detalle-producto/detalle-producto.module').then( m => m.DetalleProductoPageModule)
+  },
+  {
+    path: 'historial',
+    loadChildren: () => import('./historial/historial.module').then( m => m.HistorialPageModule)
+  },
+  {
+    path: 'carrito',
+    loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,53 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Reportar fraude</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host padding-left-right-general">
+    <ion-img src="assets/img/calavera-y-huesos.svg" class="img-fraude"></ion-img>
+    <h3 class="font-poppins-medium textos-44-size-16 ion-text-center margin-top-17">Reportar fraude</h3>
+    <p class="font-poppins-light texto-44-size-13 ion-text-center p-paddng-left-right">Estás a punto de denunciar a un negocio. Por favor asegure que su reclamo haya sido comunicado anteriormente hacia el negocio y que el mismo haya intentado brindarle una solución.</p>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-39">
+      <ion-input placeholder="Que empresa quieres denunciar" mode="ios" type="text" class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Motivo de denuncia" mode="ios" class="font-poppins-light">
+        <ion-select-option value="amazonas">Amazonas</ion-select-option>
+        <ion-select-option value="ancash">Ancash</ion-select-option>
+        <ion-select-option value="madredios">Madre de Dios</ion-select-option>
+        <ion-select-option value="ayacucho">Ayacucho</ion-select-option>
+        <ion-select-option value="ica">Ica</ion-select-option>
+        <ion-select-option value="moquegua">Moquegua</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Fecha de compra" mode="ios"  class="font-poppins-light"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Nº de transacción" mode="ios"  class="font-poppins-light" type="number"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-textarea placeholder="Descripción de la situación" class="font-poppins-light" ></ion-textarea>
+    </ion-item>
+
+    <h3 class="font-poppins-medium textos-44-size-16 margin-top-31">Datos del denunciante</h3>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Nombre y apellidos" mode="ios"  class="font-poppins-light" type="text"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Celular" mode="ios"  class="font-poppins-light" type="tel"></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Fecha de compra" mode="ios"  class="font-poppins-light" ></ion-input>
+    </ion-item>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+      <ion-input placeholder="Correo" mode="ios"  class="font-poppins-light" type="email" ></ion-input>
+    </ion-item>
+    <ion-button mode="ios" class="btn-general btn-fraude font-poppins-regular margin-top-39 btn-widht-100" href="/cancelar-compras">
+      Denunciar
+    </ion-button>
+  </div>
+</ion-content>

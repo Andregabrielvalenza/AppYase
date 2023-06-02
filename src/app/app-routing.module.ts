@@ -99,6 +99,42 @@ const routes: Routes = [
     path: 'carrito',
     loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
   },
+  {
+    path: 'gracias-reserva',
+    loadChildren: () => import('./gracias-reserva/gracias-reserva.module').then( m => m.GraciasReservaPageModule)
+  },
+  {
+    path: 'comida-bebida',
+    loadChildren: () => import('./comida-bebida/comida-bebida.module').then( m => m.ComidaBebidaPageModule)
+  },
+  {
+    path: 'busqueda-comidas-bebidas',
+    loadChildren: () => import('./busqueda-comidas-bebidas/busqueda-comidas-bebidas.module').then( m => m.BusquedaComidasBebidasPageModule)
+  },
+  {
+    path: 'micro-productores',
+    loadChildren: () => import('./micro-productores/micro-productores.module').then( m => m.MicroProductoresPageModule)
+  },
+  {
+    path: 'productores-resultados',
+    loadChildren: () => import('./productores-resultados/productores-resultados.module').then( m => m.ProductoresResultadosPageModule)
+  },
+  {
+    path: 'micro-detalle',
+    loadChildren: () => import('./micro-detalle/micro-detalle.module').then( m => m.MicroDetallePageModule)
+  },
+  {
+    path: 'anuncio',
+    loadChildren: () => import('./anuncio/anuncio.module').then( m => m.AnuncioPageModule)
+  },
+  {
+    path: 'ficha-tecnica',
+    loadChildren: () => import('./ficha-tecnica/ficha-tecnica.module').then( m => m.FichaTecnicaPageModule)
+  },
+  {
+    path: 'unete-yase',
+    loadChildren: () => import('./unete-yase/unete-yase.module').then( m => m.UneteYasePageModule)
+  },
 ];
 
 @NgModule({

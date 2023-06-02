@@ -1,0 +1,204 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">De la carretilla <span class="font-poppins-light">(Centro de cusco)</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host padding-left-right-general">
+    <swiper-container class="mySwiper mySwiper-busqueda" space-between="10" slides-per-view="4">
+      <swiper-slide>
+        <ion-item lines="none">
+          <p class="active">Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+    </swiper-container>
+    <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-25">
+      <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Ordenar por" mode="ios" class="font-poppins-light">
+        <ion-select-option value="apples">Masculino</ion-select-option>
+        <ion-select-option value="oranges">Femenino</ion-select-option>
+      </ion-select>
+      <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+    </ion-item>
+    <ion-card class="ion-no-margin card-mapa margin-top-17"></ion-card>
+    <div class="div-item-grid-2 margin-top-25">
+      <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button" href="/detalle-producto">
+        <ion-img src="assets/img/comida-uno.png"></ion-img>
+        <ion-card-header>
+          <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+          <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+          <div class="margin-top-5">
+            <ion-badge>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-badge>
+          </div>
+        </ion-card-content>
+        <!--popover-->
+        <ion-popover trigger="popover-button" [dismissOnSelect]="true">
+          <ng-template>
+            <ion-content>
+              <ion-list>
+                <ion-item [button]="true" [detail]="false">Option 1</ion-item>
+                <ion-item [button]="true" [detail]="false">Option 2</ion-item>
+                <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+        
+                <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+                  <ng-template>
+                    <ion-content>
+                      <ion-list>
+                        <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                      </ion-list>
+                    </ion-content>
+                  </ng-template>
+                </ion-popover>
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-card>
+      <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+        <ion-img src="assets/img/comida-dos.png"></ion-img>
+        <ion-card-header>
+          <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+          <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+          <div class="margin-top-5">
+            <ion-badge>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+        <ion-img src="assets/img/comida-tres.png"></ion-img>
+        <ion-card-header>
+          <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+          <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+          <div class="margin-top-5">
+            <ion-badge>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+        <ion-img src="assets/img/comida-cuatro.png"></ion-img>
+        <ion-card-header>
+          <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+          <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+          <div class="margin-top-5">
+            <ion-badge>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+        <ion-img src="assets/img/comida-cinco.png"></ion-img>
+        <ion-card-header>
+          <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+          <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+          <div class="margin-top-5">
+            <ion-badge>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+        <ion-img src="assets/img/comida-seis.png"></ion-img>
+        <ion-card-header>
+          <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+        </ion-card-header>
+        <ion-card-content class="ion-text-center">
+          <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+          <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+          <div class="margin-top-5">
+            <ion-badge>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </ion-badge>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

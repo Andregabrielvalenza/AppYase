@@ -1,0 +1,300 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Equipos de computo SAC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host">
+    <div class="div-img-relative-micro">
+      <swiper-container class="mySwiper mySwiper-detalle-micro" pagination="true" pagination-dynamic-bullets="true" autoplay="true">
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding" >
+          </ion-card>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-card class="ion-no-margin card-micro-detalle ion-no-padding">
+            
+          </ion-card>
+        </swiper-slide>
+      </swiper-container>
+      <ion-img src="assets/img/img-circle-micro.png" class="img-avatar-micro"></ion-img>
+    </div>
+    <div class="padding-left-right-general">
+      <ion-badge class="margin-top-17 badger-estrela-micro">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </ion-badge>
+      <p class="font-poppins-bold texto-44-size-13 margin-top-5 ion-no-margin-bottom">2 comentarios</p>
+      <p class="margin-top-10 texto-44-size-13 font-poppins-light ion-no-margin-bottom">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      </p>
+      <h4 class="font-poppins-bold textos-44-size-16 margin-top-31">Formas de pago:</h4>
+      <h4 class="font-poppins-bold textos-44-size-16 margin-top-39">Nuestros productos</h4>
+      <div class="div-flex-detalle-micro">
+        <ion-item lines="none" (click)="accion1()" class="item-detalle active-micro">
+          <p class="active">Productos</p>
+        </ion-item>
+        <ion-item lines="none" (click)="accion2()" class="item-detalle">
+          <p class="active">Información</p>
+        </ion-item>
+      </div>
+      <div *ngIf="ocultar1" class="margin-top-31">
+        <ion-item line="none" mode="ios" class="item-input-general margin-top-5">
+          <ion-input placeholder="¿Qué estas buscando?" mode="ios" type="search" class="font-poppins-light"></ion-input>
+          <ion-icon name="search-sharp" slot="end"></ion-icon>
+        </ion-item>
+        <ion-item lines="none" mode="ios" class="item-input-general item-input-padding-top margin-top-5">
+          <ion-select aria-label="Fruit" interface="action-sheet" placeholder="Selecciona categoria" mode="ios" class="font-poppins-light">
+            <ion-select-option value="amazonas">Amazonas</ion-select-option>
+            <ion-select-option value="ancash">Ancash</ion-select-option>
+            <ion-select-option value="madredios">Madre de Dios</ion-select-option>
+            <ion-select-option value="ayacucho">Ayacucho</ion-select-option>
+            <ion-select-option value="ica">Ica</ion-select-option>
+            <ion-select-option value="moquegua">Moquegua</ion-select-option>
+          </ion-select>
+          <ion-icon name="chevron-down-outline" class="icon-select"></ion-icon>
+        </ion-item>
+        <div class="div-item-grid-2 margin-top-25">
+          <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button" href="/detalle-producto">
+            <ion-img src="assets/img/comida-uno.png"></ion-img>
+            <ion-card-header>
+              <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+              <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+              <div class="margin-top-5">
+                <ion-badge>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-badge>
+              </div>
+            </ion-card-content>
+            <!--popover-->
+            <ion-popover trigger="popover-button" [dismissOnSelect]="true">
+              <ng-template>
+                <ion-content>
+                  <ion-list>
+                    <ion-item [button]="true" [detail]="false">Option 1</ion-item>
+                    <ion-item [button]="true" [detail]="false">Option 2</ion-item>
+                    <ion-item [button]="true" id="nested-trigger">More options...</ion-item>
+            
+                    <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+                      <ng-template>
+                        <ion-content>
+                          <ion-list>
+                            <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+                          </ion-list>
+                        </ion-content>
+                      </ng-template>
+                    </ion-popover>
+                  </ion-list>
+                </ion-content>
+              </ng-template>
+            </ion-popover>
+          </ion-card>
+          <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+            <ion-img src="assets/img/comida-dos.png"></ion-img>
+            <ion-card-header>
+              <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+              <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+              <div class="margin-top-5">
+                <ion-badge>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-badge>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+            <ion-img src="assets/img/comida-tres.png"></ion-img>
+            <ion-card-header>
+              <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+              <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+              <div class="margin-top-5">
+                <ion-badge>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-badge>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+            <ion-img src="assets/img/comida-cuatro.png"></ion-img>
+            <ion-card-header>
+              <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+              <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+              <div class="margin-top-5">
+                <ion-badge>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-badge>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+            <ion-img src="assets/img/comida-cinco.png"></ion-img>
+            <ion-card-header>
+              <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+              <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+              <div class="margin-top-5">
+                <ion-badge>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-badge>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card class="ion-no-margin card-relative-turismo card-relative-comidas ion-no-padding" type="button">
+            <ion-img src="assets/img/comida-seis.png"></ion-img>
+            <ion-card-header>
+              <ion-button mode="ios" class="ion-no-padding" id="popover-button" ><ion-icon name="ellipsis-vertical"></ion-icon></ion-button>
+            </ion-card-header>
+            <ion-card-content class="ion-text-center">
+              <h4 class="font-poppins-extrabold texto-44-size-13">Este es un nombre de producto</h4>
+              <p class="font-poppins-semibold textos-44-size-16 margin-top-5">S/.120.00</p>
+              <div class="margin-top-5">
+                <ion-badge>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </ion-badge>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+      <div *ngIf="ocultar2" class="margin-top-31">
+        <ion-card class="ion-no-margin ion-card-top">
+          <h3 class="font-poppins-semibold textos-44-size-16 ion-no-margin">Datos de envio</h3>
+          <p class="font-poppins-bold texto-44-size-13 margin-top-10 ion-no-margin p-rojo-span">Tiempo de entrega: <span class="font-poppins-regular">3 dias habiles</span></p>
+          <p class="font-poppins-bold texto-44-size-13 ion-no-margin p-rojo-span">Zona de delivery: <span class="font-poppins-regular">Peru</span></p>
+          <p class="font-poppins-bold texto-44-size-13 ion-no-margin">Tiempo de entrega:</p>
+          <p class="font-poppins-light textos-44-size-16 margin-top-5">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+          </p>
+        </ion-card>
+        <ion-card class="ion-no-margin ion-card-top">
+          <h3 class="font-poppins-semibold textos-44-size-16 ion-no-margin">Dirección</h3>
+          <ion-item lines="none" class="item-ubicacion">
+            <ion-icon name="location-sharp" slot="start"></ion-icon>
+            <ion-label class="font-poppins-light textos-44-size-16">Esta es la direccion 123, Cusco ,Peru</ion-label>
+          </ion-item>
+          <ion-card class="ion-no-margin card-mapa margin-top-17"></ion-card>
+          <h3 class="font-poppins-semibold textos-44-size-16 ion-no-margin margin-top-31">Política de cancelación y / o devolución</h3>
+        </ion-card>
+        <ion-card class="ion-no-margin ion-card-top">
+          <h3 class="font-poppins-semibold textos-44-size-16 ion-no-margin">Comentarios</h3>
+          <div class="lista-comentarios margin-top-25">
+            <ion-card class="ion-no-margin card-comentario ">
+              <ion-item lines="none" class="item-header">
+                <ion-img src="assets/img/avatar.svg" alt="avatar"></ion-img>
+                <ion-label>
+                  <h3 class="font-poppins-semibold">Ignacio Mateo Casto Cario</h3>
+                  <p class="font-poppins-light">Hace 2 meses</p>
+                </ion-label>
+              </ion-item>
+              <div class="d-flex-calidad-precio margin-top-17">
+                <div>
+                  <h5 class="font-poppins-light texto-44-size-13 ion-no-margin">Calidad</h5>
+                  <ion-badge>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </ion-badge>
+                </div>
+                <div>
+                  <h5 class="font-poppins-light texto-44-size-13 ion-no-margin">Precio</h5>
+                  <ion-badge>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </ion-badge>
+                </div>
+              </div>
+              <div class="ion-margin-top">
+                <h4 class="font-poppins-semibold textos-44-size-16 ion-no-margin">Muy Buen producto</h4>
+                <p class="font-poppins-light texto-44-size-13 ion-no-margin">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
+                </p>
+              </div>
+            </ion-card>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+</ion-content>

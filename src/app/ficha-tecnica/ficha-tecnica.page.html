@@ -1,0 +1,425 @@
+<ion-header collapse="fade" mode="ios">
+  <ion-toolbar class="toolbar-general-flecha">
+    <ion-button class="btn-flecha-header ion-no-padding" href="/home"><ion-icon name="arrow-back"></ion-icon></ion-button>
+    <ion-title class="ion-text-start font-poppins-bold title-17-size-18-header">Arreglos <span class="font-poppins-light">(Centro de cusco)</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false">
+  <div class="ion-content-scroll-host">
+    <swiper-container class="mySwiper mySwiper-busqueda padding-left-right-general" space-between="10" slides-per-view="4">
+      <swiper-slide>
+        <ion-item lines="none">
+          <p class="active">Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-item lines="none">
+          <p>Popular</p>
+        </ion-item>
+      </swiper-slide>
+    </swiper-container>
+    <swiper-container class="mySwiper mySwiper-ficha padding-left-right-general margin-top-39" pagination="true" space-between="25" autoplay="true"
+    slides-per-view="1">
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+            </div>
+            <div class="margin-top-20" *ngIf="ocultar2">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+            <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+              <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+    <div class="div-item-grid-2 margin-top-31 padding-left-right-general">
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="setOpen(true)">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="padding-left-right-general margin-top-17">
+      <ion-card class="ion-no-margin card-plomo-tecnica">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5" *ngIf="ocultar1">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion1()">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+          <div class="margin-top-20" *ngIf="ocultar2">
+            <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+            <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+            <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+          </div>
+          <div class="ion-text-end margin-top-5" *ngIf="ocultar2">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding" (click)="accion2()">Ver menos <ion-icon name="chevron-up-circle"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+    <div class="div-item-grid-2 margin-top-17 padding-left-right-general">
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="ion-no-margin card-plomo-tecnica-list">
+        <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+        <ion-card-content class="ion-text-start">
+          <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+          <h3 class="font-poppins-semibold texto-44-size-13 ion-text-start">Titulo del anuncio</h3>
+          <p class="font-poppins-light texto-44-size-13 margin-top-5 text-dos-lineas">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+          </p>
+          <div class="ion-text-end margin-top-5">
+            <ion-button mode="ios" class="btn-ver-mas font-poppins-semibold ion-no-padding">Ver más <ion-icon name="chevron-down-circle-sharp"></ion-icon></ion-button>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+
+ <!--modal-->
+ <ion-modal [isOpen]="isModalOpen" class="modal-transparente">
+  <ng-template>
+    <ion-content class="ion-padding">
+      <div class="modal-padding-left-right">
+        <ion-card class="ion-no-margin card-plomo-tecnica">
+          <ion-img src="assets/img/diy-tools.png" class="img-header"></ion-img>
+          <ion-card-content class="ion-text-start">
+            <ion-img src="assets/img/img-circle-micro.png" class="img-circle-radius"></ion-img>
+            <h3 class="font-poppins-semibold texto-44-size-18 ion-text-start">Titulo del anuncio</h3>
+            <p class="font-poppins-light texto-44-size-13 margin-top-5">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...
+            </p>
+            <div class="margin-top-20 ion-no-padding div-block-modal">
+              <p class="font-poppins-light texto-44-size-13 p-item-icon"><ion-icon name="phone-portrait-outline"></ion-icon>987876786</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="mail-outline"></ion-icon>nombre@empresa.com</p>
+              <p class="font-poppins-light texto-44-size-13 p-item-icon margin-top-10"><ion-icon name="locate"></ion-icon>Direccione de la oficina 123, Santa Monica, Cusco</p>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-content>
+  </ng-template>
+</ion-modal>
+
+</ion-content>
